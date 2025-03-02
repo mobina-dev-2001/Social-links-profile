@@ -45,7 +45,7 @@ body {
 }
 
 .info-container h1 {
-    margin: 1.5rem 0 .5rem 0;
+    margin: 1.75rem 0 .5rem 0;
     color: var(--white);
     font-size: 1.5rem;
     font-weight: 600;
@@ -57,9 +57,9 @@ p:first-of-type {
 }
 
 p:last-of-type {
-    margin: 2rem 0 1.75rem 0;
+    margin: 1.75rem 0 1.5rem 0;
     color: var(--white);
-    opacity: .8;
+    opacity: .7;
 }
 
 .socials-container {
@@ -79,21 +79,14 @@ p:last-of-type {
     outline: none;
     color: var(--white);
     font-family: 'Inter', serif;
+    font-size: .9rem;
+    font-weight: 600;
     cursor: pointer;
+    transition: all ease 200ms;
 }
 
 .socials-container button:hover {
     background-color: var(--green);
-    color: var(--grey-900);
-}
-
-a {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: 600;
-}
-
-.socials-container button:hover a {
     color: var(--grey-900);
 }
 

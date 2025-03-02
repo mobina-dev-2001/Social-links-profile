@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    background-color: var(--grey-900);
+    font-family: 'Inter', serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+    padding: 2.2rem 2.5rem;
+    background-color: var(--grey-800);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.avatar-container img {
+    width: 5.5rem;
+    border-radius: 50%;
+}
+
+.info-container h1 {
+    margin: 1.5rem 0 .5rem 0;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p:first-of-type {
+    color: var(--green);
+    font-weight: 600;
+}
+
+p:last-of-type {
+    margin: 2rem 0 1.75rem 0;
+    color: var(--white);
+    opacity: .8;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .85rem;
+    max-width: 100%;
+}
+
+.socials-container button {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--grey-700);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: var(--white);
+    font-family: 'Inter', serif;
+    cursor: pointer;
+}
+
+.socials-container button:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.socials-container button:hover a {
+    color: var(--grey-900);
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        width: 350px;
+        padding: 1.5rem;
+    }
+}
